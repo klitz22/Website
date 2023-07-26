@@ -201,7 +201,11 @@ justify-content: center;
 align-items: center;
 gap: 30px;
 padding: 50px;
+<<<<<<< HEAD
 max-width: 800px;
+=======
+max-width: 1200px;
+>>>>>>> 614c34c1ec23072f186999e596359826f5957954
 margin: 0 auto;
 }
 
@@ -330,7 +334,11 @@ transform: rotate(180deg);
 
 .hero {
 position: relative;
+<<<<<<< HEAD
 min-height: 100vh;
+=======
+height: 100vh;
+>>>>>>> 614c34c1ec23072f186999e596359826f5957954
 width: 100%;
 overflow: hidden;
 display: flex;
@@ -339,7 +347,10 @@ align-items: center;
 padding: 0;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 614c34c1ec23072f186999e596359826f5957954
 .hero-image {
 width: 100%;
 height: 100%;
@@ -556,7 +567,11 @@ left: 0;
 right: 0;
 top: 0;
 bottom: 0;
+<<<<<<< HEAD
 background-image: url(http://kldcreativestudio.com/wp-content/uploads/2023/07/hero@0.5x.png);
+=======
+background-image: url(http://kldcreativestudio.com/wp-content/uploads/2023/07/Hero_big@3x.png);
+>>>>>>> 614c34c1ec23072f186999e596359826f5957954
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -564,17 +579,29 @@ background-size: cover;
 
 .glitch__layer:nth-child(1) {
 transform: translateX(-0.5%);
+<<<<<<< HEAD
 animation: glitch-anim-1 15s infinite linear alternate; /* Decreased animation duration */
+=======
+animation: glitch-anim-1 0.5s infinite linear alternate; /* Decreased animation duration */
+>>>>>>> 614c34c1ec23072f186999e596359826f5957954
 }
 
 .glitch__layer:nth-child(2) {
 transform: translateX(0.5%) translateY(0.5%);
+<<<<<<< HEAD
 animation: glitch-anim-2 15s -9s infinite linear alternate; /* Decreased animation duration and delay */
+=======
+animation: glitch-anim-2 0.3s -.1s infinite linear alternate; /* Decreased animation duration and delay */
+>>>>>>> 614c34c1ec23072f186999e596359826f5957954
 }
 
 .glitch__layer:nth-child(3) {
 transform: translateX(0.5%);
+<<<<<<< HEAD
 animation: glitch-anim-flash 3s infinite linear; /* Decreased animation duration */
+=======
+animation: glitch-anim-flash 0.5s infinite linear; /* Decreased animation duration */
+>>>>>>> 614c34c1ec23072f186999e596359826f5957954
 }
 
 
@@ -658,6 +685,7 @@ animation: glitch-anim-flash 3s infinite linear; /* Decreased animation duration
   opacity: 0;
 }
 }
+<<<<<<< HEAD
 
 
 /* Add new styles for the Fantasy Football Analysis section */
@@ -774,3 +802,5 @@ padding: 20px;
   Font-weight: bold;
   }
 }
+=======
+>>>>>>> 614c34c1ec23072f186999e596359826f5957954
