@@ -81,7 +81,6 @@
             menuIcon.style.backgroundColor = '#fff';
             menuIcon.style.borderColor = '#fff';
             menuIcon.querySelectorAll('span, span:before, span:after').forEach(span => span.style.backgroundColor = '#000');
-<<<<<<< HEAD
         });
     
         menuToggle.addEventListener('change', () => {
@@ -119,43 +118,4 @@
     
     </script>
 </body>
-=======
-    });
-    
-    menuToggle.addEventListener('change', () => {
-        if (menuToggle.checked) {
-            menu.style.visibility = 'visible';
-            menu.style.opacity = '1';
-        } else {
-            menu.style.visibility = 'hidden';
-            menu.style.opacity = '0';
-        }
-    });
-    
-    menu.addEventListener('click', (event) => {
-        if (event.target.classList.contains('menu-link') || event.target.tagName === 'H2') {
-            menuToggle.checked = false;
-            menu.style.visibility = 'hidden';
-            menu.style.opacity = '0';
-            menuIcon.classList.remove('close');
-        }
-    });
-    
-    document.addEventListener('click', (event) => {
-        if (!event.target.closest('.menu-container') && !event.target.closest('#menu-toggle') && !event.target.closest('#menu-icon')) {
-            menuToggle.checked = false;
-            menu.style.visibility = 'hidden';
-            menu.style.opacity = '0';
-            menuIcon.classList.remove('close');
-        }
-    });
-    
-    window.addEventListener('load', () => {
-        const loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.style.display = 'none';
-    });
-    </script>
-</body>
-
->>>>>>> 614c34c1ec23072f186999e596359826f5957954
 </html>
