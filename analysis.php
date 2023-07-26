@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body class="analysis-page">
+    <div id="loading-screen">
+        <span class="loader"></span>
+    </div>
     <header>
         <div id="menu-icon-wrapper">
             <div id="menu-icon-container">
@@ -20,25 +23,46 @@
                 </label>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#fantasy-football-analysis">Fantasy Football Analysis</a></li>
-                <li><a href="#place-holder2">Place Holder 2</a></li>
-                <li><a href="#place-holder3">Place Holder 3</a></li>
-            </ul>
-        </nav>
     </header>
-    <section id="fantasy-football-analysis" class="section hidden-section">
+<div id="menu">
+    <div class="menu-container">
+        <div class="menu-item">
+            <a href="index.php" class="menu-link">
+            <span>
+             <img class="menu-icon" src="http://kldcreativestudio.com/wp-content/uploads/2023/07/home_icon.png" alt="Home icon">
+                <h2>Home</h2>
+            </span>
+            </a>
+        </div>
+         <div class="menu-item">
+            <a href="articles.php" class="menu-link">
+                <span>
+                <img class="menu-icon" src="http://kldcreativestudio.com/wp-content/uploads/2023/07/article_icon.png" alt="Article icon">
+                <h2>Articles</h2>
+                </span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="news.php" class="menu-link">
+                <span>
+                <img class="menu-icon" src="http://kldcreativestudio.com/wp-content/uploads/2023/07/news_icon.png" alt="News icon">
+                <h2>News</h2>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+    <section id="fantasy-football-analysis">
         <div class="container">
-            <h2 class="section-title">Fantasy Football Analysis</h2>
+            <h2 class="section-title">Player Analysis</h2>
+            <img src="http://kldcreativestudio.com/wp-content/uploads/2023/07/analysis_icon_1.png" alt="Lunar Edge Logo" class="title-image">
             <div class="analysis-content">
-                <!-- Your analysis content goes here -->
+                <div class="content-container">
+                Testing
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2023 My Website</p>
-    </footer>
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const menuIcon = document.getElementById('menu-icon');

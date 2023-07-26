@@ -201,7 +201,7 @@ justify-content: center;
 align-items: center;
 gap: 30px;
 padding: 50px;
-max-width: 1200px;
+max-width: 800px;
 margin: 0 auto;
 }
 
@@ -330,7 +330,7 @@ transform: rotate(180deg);
 
 .hero {
 position: relative;
-height: 100vh;
+min-height: 100vh;
 width: 100%;
 overflow: hidden;
 display: flex;
@@ -338,6 +338,7 @@ justify-content: center;
 align-items: center;
 padding: 0;
 }
+
 
 .hero-image {
 width: 100%;
@@ -555,7 +556,7 @@ left: 0;
 right: 0;
 top: 0;
 bottom: 0;
-background-image: url(http://kldcreativestudio.com/wp-content/uploads/2023/07/Hero_big@3x.png);
+background-image: url(http://kldcreativestudio.com/wp-content/uploads/2023/07/hero@0.5x.png);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -563,17 +564,17 @@ background-size: cover;
 
 .glitch__layer:nth-child(1) {
 transform: translateX(-0.5%);
-animation: glitch-anim-1 0.5s infinite linear alternate; /* Decreased animation duration */
+animation: glitch-anim-1 15s infinite linear alternate; /* Decreased animation duration */
 }
 
 .glitch__layer:nth-child(2) {
 transform: translateX(0.5%) translateY(0.5%);
-animation: glitch-anim-2 0.3s -.1s infinite linear alternate; /* Decreased animation duration and delay */
+animation: glitch-anim-2 15s -9s infinite linear alternate; /* Decreased animation duration and delay */
 }
 
 .glitch__layer:nth-child(3) {
 transform: translateX(0.5%);
-animation: glitch-anim-flash 0.5s infinite linear; /* Decreased animation duration */
+animation: glitch-anim-flash 3s infinite linear; /* Decreased animation duration */
 }
 
 
@@ -656,4 +657,119 @@ animation: glitch-anim-flash 0.5s infinite linear; /* Decreased animation durati
 35%, 100% {
   opacity: 0;
 }
+}
+
+
+/* Add new styles for the Fantasy Football Analysis section */
+
+.analysis-page {
+position: relative;
+background-image: url(http://kldcreativestudio.com/wp-content/uploads/2023/07/dark_turf@0.5x.png);
+background-attachment: fixed; 
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100vh;
+}
+
+/* Styling the arrow image */
+.analysis-page::before {
+content: "";
+position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+width: 5%; /* Adjust the width as needed */
+min-height: 90vh;
+background-image: url('http://kldcreativestudio.com/wp-content/uploads/2023/07/white-yardsricks.png');
+background-repeat: no-repeat;
+background-size: auto 90%;
+background-position: center bottom;
+padding: 20px;
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust as per your requirement */
+  min-height: 60vh; /* Adjust as per your requirement */
+  background-color: white;
+  border-radius: 10px; /* For rounded corners, if desired */
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Optional: Adds a slight shadow for a "floating" effect */
+  overflow: auto; /* In case your content is longer than your container */
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+      width: 60%; /* This width will apply for smaller screens (less than or equal to 768px) */
+  }
+}
+
+.section-title {
+  color: white;
+  text-align: center;
+  font-size: 2.5em; /* adjust size as needed */
+  font-weight: bold; /* make it bold */
+  padding: 10px 0; /* some padding to give it room */;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7%; /* adjust as needed */
+  height: auto;
+}
+
+
+/* This is a media query that will apply the styles inside it when the width of the viewport is 480 pixels or less. Adjust this value based on when you want the styles to apply. */
+@media (max-width: 768px) {
+  .section-title {
+      font-size: 1.5em;  /* adjust size as needed */
+      margin-top: 50px;
+  }
+}
+
+/* Home Icon in Menu Container */
+.menu-link span {
+  display: flex;
+  align-items: center; /* aligns the items vertically in the middle */
+}
+
+.menu-icon {
+  width: 75px;  /* adjust as needed */
+  height: 75px; /* adjust as needed */
+  margin-right: 20px; /* adds some space to the right of the image */
+}
+
+.menu-item h2 {
+  font-size: 50px; /* adjust as needed */
+  Font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .menu-icon {
+      width: 30px;  /* adjust as needed */
+      height: 30px; /* adjust as needed */
+  }
+  .menu-item h2 {
+  font-size: 30px; /* adjust as needed */
+  Font-weight: bold;
+  }
+}
+
+@media (min-width: 480px) {
+  .menu-icon {
+      width: 50px;  /* adjust as needed */
+      height: 50px; /* adjust as needed */
+  }
+  .menu-item h2 {
+  font-size: 30px; /* adjust as needed */
+  Font-weight: bold;
+  }
 }
